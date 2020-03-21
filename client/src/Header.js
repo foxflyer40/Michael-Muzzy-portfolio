@@ -15,24 +15,31 @@ class Header extends React.Component {
    render() {
       return (
          <div id='banner' className='page'>
+
             <Link to={'/'} className='bannerSelector'>
                <div >Home</div>
             </Link>
+
             <Link to={'/about'} className='bannerSelector'>
                <div >About Me</div>
             </Link>
+
             <Link to={'/projects'} className='bannerSelector'>
                <div >Projects</div>
             </Link>
+
             <Link to={'/hobbies'} className='bannerSelector'>
                <div >Hobbies</div>
             </Link>
+
             <Link to={'/work'} className='bannerSelector'>
                <div >Work</div>
             </Link>
-            <a target="_blank" href='https://www.burlingtoncodeacademy.com/' rel="noopener noreferrer" className='bannerSelector'>
-               <div >BCA</div>
-            </a>
+            
+            <Link to={'/contact'} className='bannerSelector'>
+               <div >Contact Me</div>
+            </Link>
+           
          </div>
       )
    }

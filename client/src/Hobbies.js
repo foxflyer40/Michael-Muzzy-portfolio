@@ -1,5 +1,4 @@
 import React from 'react'
-import App from './App.css';
 import RCAV8R from './media/RCAV8R.jpg'
 import Echo from './media/Echo.jpg'
 
@@ -16,14 +15,16 @@ class Hobbies extends React.Component {
    render() {
       return (
          <div id='hobbyPage'>
-          
+
             <label >
                <div className='hobbyLabel'>
                   RC Aviation
                </div>
-               <a >
+               <a 
+               target="_blank"
+               rel="noopener noreferrer"
+               href='http://www.greenmountainrc.org/'>
                   <img src={(RCAV8R)} alt='Link to RC Aviation'></img>
-                  {/*  */}
                </a>
             </label>
 
@@ -31,9 +32,8 @@ class Hobbies extends React.Component {
                <div className='hobbyLabel'>
                   Photography
                </div>
-               <a >
+               <a href=''>
                   <img src={(Echo)} alt='Link to Photography'></img>
-                  {/*  */}
                </a>
             </label>
 

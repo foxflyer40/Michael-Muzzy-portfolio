@@ -2,27 +2,41 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './App.css';
 
-export default function Header(props) {
-   return (
-      <div id='banner' className='page'>
-         <Link to={'/'}>
-            <div className='bannerSelector'>Home</div>
-         </Link>
-         <Link to={'/about'}>
-            <div className='bannerSelector'>About Me</div>
-         </Link>
-         <Link to={'/projects'}>
-            <div className='bannerSelector'>Projects</div>
-         </Link>
-         <Link to={'/hobbies'}>
-            <div className='bannerSelector'>Hobbies</div>
-         </Link>
-         <Link to={'/work'}>
-            <div className='bannerSelector'>Work</div>
-         </Link>
-         <a target="_blank" href='https://www.burlingtoncodeacademy.com/' rel="noopener noreferrer">
-            <div className='bannerSelector'>BCA</div>
-         </a>
-      </div>
-   )
+
+class Header extends React.Component {
+   constructor(props) {
+      super(props)
+
+      this.state = {
+
+      }
+   }
+
+   render() {
+      return (
+         <div id='banner' className='page'>
+            <Link to={'/'} className='bannerSelector'>
+               <div >Home</div>
+            </Link>
+            <Link to={'/about'} className='bannerSelector'>
+               <div >About Me</div>
+            </Link>
+            <Link to={'/projects'} className='bannerSelector'>
+               <div >Projects</div>
+            </Link>
+            <Link to={'/hobbies'} className='bannerSelector'>
+               <div >Hobbies</div>
+            </Link>
+            <Link to={'/work'} className='bannerSelector'>
+               <div >Work</div>
+            </Link>
+            <a target="_blank" href='https://www.burlingtoncodeacademy.com/' rel="noopener noreferrer" className='bannerSelector'>
+               <div >BCA</div>
+            </a>
+         </div>
+      )
+   }
 }
+
+
+   export default Header;

@@ -1,12 +1,34 @@
 import React from 'react'
 import './App.css';
+import Resume from './media/Resume.PNG'
 
-export default function Work(props) {
-   return (
-      <div className='page'>
-           <h1>
-            Work
-         </h1>
-      </div>
-   )
+class Work extends React.Component {
+   constructor(props) {
+      super(props)
+
+      this.state = {
+
+      }
+   }
+
+   render() {
+      return (
+         <div id='workPage'>
+         
+         <label >
+               <div className='workLabel'>
+                  Resume
+               </div>
+               <a >
+                  <img src={(Resume)} alt='Resume link'></img>
+                  {/*  */}
+               </a>
+            </label>
+
+
+         </div>
+      )
+   }
 }
+
+export default Work

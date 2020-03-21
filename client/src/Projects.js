@@ -1,9 +1,10 @@
 import React from 'react'
+import './App.css';
 
 export default function Projects(props) {
    return (
-      <div>
-         <h1>I am the Projects page</h1>
+      <div className='page'>
+         <h1>Projects </h1>
       </div>
    )
 }

@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import Projects from './Projects';
 import Hobbies from './Hobbies';
+import Work from './Work';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         <Route exact path={'/'} component={Home} />
         <Route path={'/about'} component={About} />
         <Route path={'/projects'} component={Projects} />
-        
+        <Route path={'/hobbies'} component={Hobbies} />
+        <Route path={'/work'} component={Work} />
       </Switch>
     </div>
   )

@@ -4,7 +4,7 @@ import './App.css';
 
 export default function Header(props) {
    return (
-      <div id='banner'>
+      <div id='banner' className='page'>
          <Link to={'/'}>
             <div className='bannerSelector'>Home</div>
          </Link>
@@ -14,7 +14,13 @@ export default function Header(props) {
          <Link to={'/projects'}>
             <div className='bannerSelector'>Projects</div>
          </Link>
-         <a target="_blank" href='https://bootcamp.burlingtoncodeacademy.com/lessons/react/routing-in-react#content' rel="noopener noreferrer">
+         <Link to={'/hobbies'}>
+            <div className='bannerSelector'>Hobbies</div>
+         </Link>
+         <Link to={'/work'}>
+            <div className='bannerSelector'>Work</div>
+         </Link>
+         <a target="_blank" href='https://www.burlingtoncodeacademy.com/' rel="noopener noreferrer">
             <div className='bannerSelector'>BCA</div>
          </a>
       </div>

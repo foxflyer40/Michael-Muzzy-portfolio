@@ -14,14 +14,13 @@ class Work extends React.Component {
    render() {
       return (
          <div id='workPage'>
-         
-         <label >
+
+            <label >
                <div className='workLabel'>
-                  Resume
+                  (Click resume to download.)
                </div>
-               <a >
+               <a href="./media/myResume.pdf" download>
                   <img src={(Resume)} alt='Resume link'></img>
-                  {/*  */}
                </a>
             </label>
 
@@ -32,3 +31,5 @@ class Work extends React.Component {
 }
 
 export default Work
+
+

@@ -1,6 +1,15 @@
 /* Global Styling */
 
+
+
 /* Header Styling */
+#top { 
+   position: fixed; 
+   top: 0; 
+   left: 0; 
+   width: 100%; 
+   background-color: #FFF; 
+   z-index: 99; }
 
 #banner {
    display: flex;
@@ -20,7 +29,7 @@
 
 #homePage {
    display: flex;
-   margin: 6em 0em 0em 0em;
+   margin: 7em 0em 0em 0em;
    padding: 0;
    flex-direction: row;
    justify-content: center;
@@ -52,8 +61,8 @@
 /* About page styling */
 
 #aboutPage {
-   margin: 1em;
-   padding: 3em;
+   margin: 2em 1em 1em 1em;
+   padding: 2em;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -62,14 +71,16 @@
 }
 
 #aboutContent {
-   font-size: 1.5em;
+   padding-left: 9em;
+   padding-right: 9em;
+   font-size: 1.2em;
    font-weight: 500;
 }
 
 /* Projects page styling */
 
 #projectsPage {
-   margin: 1em;
+   margin: 2em 1em 1em 1em;
    padding: 1em;
    display: flex;
    flex-direction: row;
@@ -92,7 +103,7 @@ label {
 /* Hobby page styling */
 
 #hobbyPage {
-   margin: 1em;
+   margin: 2em 1em 1em 1em;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -110,7 +121,7 @@ label {
 /* Work page styling */
 
 #workPage {
-   margin: 0em 1em 1em 1em;
+   margin: 2em 1em 1em 1em;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -121,6 +132,53 @@ label {
 .workLabel {
    margin-bottom: 2em;
    text-align: center;
-   font-size: 2em;
+   font-size: 1.2em;
+   font-weight: 500;
+}
+
+/* modal styling */
+#main {
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+   
+ }
+ 
+ #modal {
+   display: flex;
+   flex-direction: column;
+   width: 100vw;
+   height: 100vh;
+   z-index: 3000;
+   position: absolute;
+   top: 0em;
+   background-color: rgba(0, 0, 0, .8);
+   justify-items: left;
+   align-items: center;
+   margin: 0em;
+   padding: 0em;
+ }
+ 
+/* Footer Styling */
+#bottom { 
+   position: fixed; 
+   bottom: 0; 
+   left: 0; 
+   width: 100%; 
+   background-color: #FFF; 
+   z-index: 99; }
+
+ #footer {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   font-size: x-large;
+}
+
+.footerSelector {
+   text-decoration: none;
+   color: rgb(21, 95, 156);
    font-weight: 500;
 }

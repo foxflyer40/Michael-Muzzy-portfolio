@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 
+
 class Header extends React.Component {
    constructor(props) {
       super(props)
 
       this.state = {
-
+         
       }
    }
 
+  
    render() {
       return (
          <div id='banner' className='page'>
@@ -35,15 +37,11 @@ class Header extends React.Component {
             <Link to={'/work'} className='bannerSelector'>
                <div >Work</div>
             </Link>
-            
-            <Link to={'/contact'} className='bannerSelector'>
-               <div >Contact Me</div>
-            </Link>
-           
+
          </div>
       )
    }
 }
 
 
-   export default Header;
+export default Header;

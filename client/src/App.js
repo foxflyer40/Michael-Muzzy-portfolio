@@ -44,13 +44,13 @@ class App extends React.Component {
           <Route path={'/hobbies'} component={Hobbies} />
           <Route path={'/work'} component={Work} />
         </Switch>
-        <div id='bottom'>
+        {/* <div id='bottom'> */}
           <Footer modalOpen={this.state.modalOpen} handleOpen={this.handleOpen} />
-        </div>
+        {/* </div> */}
         <div id='modal' style={{ visibility: this.state.modalOpen ? 'visible' : 'hidden' }} >
           <h1>Hello! I am a Modal</h1>
           <button id='closeButton' onClick={this.handleClose}>Close modal</button>
-        </div>/>
+        </div>
       </div>
     )
   }

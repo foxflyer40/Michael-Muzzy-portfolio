@@ -13,7 +13,7 @@ class Header extends React.Component {
       }
    }
 
-  
+//   Header with links to other pages
    render() {
       return (
          <div id='banner' className='page'>

@@ -11,18 +11,18 @@ class Footer extends React.Component {
       }
    }
 
-
+// Footer with links to social media and modal popup for contact info and form
    render() {
       return (
          <div id='footer'>
 
-            <Link to={'/'} className='footerSelector'>
+            <a target="_blank" href='https://www.linkedin.com/in/michael-muzzy/' rel="noopener noreferrer" className='bannerSelector'>
                <div >LinkedIn</div>
-            </Link>
+            </a>
 
-            <Link to={'/'} className='footerSelector'>
+            <a target="_blank" href='https://github.com/foxflyer40' rel="noopener noreferrer" className='bannerSelector'>
                <div >Github</div>
-            </Link>
+            </a>
 
             <div >
                <div className='footerSelector' onClick={this.props.handleOpen} >Contact Me</div>

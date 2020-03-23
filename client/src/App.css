@@ -1,15 +1,28 @@
-/* Global Styling */
+/* Global Styling so Footer stays at bottom relative to content*/
 
+html, body {
+   height: 100%;
+}
 
+#body {
+   display: flex;
+   flex-direction: column;
+}
+
+#content {
+   flex: 1 0 auto;
+}
 
 /* Header Styling */
-#top { 
-   position: fixed; 
-   top: 0; 
-   left: 0; 
-   width: 100%; 
-   background-color: #FFF; 
-   z-index: 99; }
+
+#top {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #FFF;
+   z-index: 99;
+}
 
 #banner {
    display: flex;
@@ -21,7 +34,7 @@
 
 .bannerSelector {
    text-decoration: none;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
    font-weight: 500;
 }
 
@@ -34,7 +47,7 @@
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
 }
 
 .image-blurred-edge {
@@ -67,7 +80,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
 }
 
 #aboutContent {
@@ -86,7 +99,7 @@
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
 }
 
 .projectLabel {
@@ -108,7 +121,7 @@ label {
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
 }
 
 .hobbyLabel {
@@ -126,7 +139,7 @@ label {
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
 }
 
 .workLabel {
@@ -137,15 +150,15 @@ label {
 }
 
 /* modal styling */
+
 #main {
    display: flex;
    flex-direction: column;
    justify-items: center;
    align-items: center;
-   
- }
- 
- #modal {
+}
+
+#modal {
    display: flex;
    flex-direction: column;
    width: 100vw;
@@ -158,18 +171,18 @@ label {
    align-items: center;
    margin: 0em;
    padding: 0em;
- }
- 
-/* Footer Styling */
-#bottom { 
-   position: fixed; 
-   bottom: 0; 
-   left: 0; 
-   width: 100%; 
-   background-color: #FFF; 
-   z-index: 99; }
+}
 
- #footer {
+/* Footer Styling */
+
+#bottom {
+   flex-shrink: 0;
+   width: 100%;
+   background-color: #FFF;
+   z-index: 99;
+}
+
+#footer {
    display: flex;
    justify-content: space-around;
    margin-top: 1em;
@@ -179,6 +192,6 @@ label {
 
 .footerSelector {
    text-decoration: none;
-   color: rgb(21, 95, 156);
+   color: rgb(12, 108, 187);
    font-weight: 500;
 }

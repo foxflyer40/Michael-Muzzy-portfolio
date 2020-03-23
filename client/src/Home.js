@@ -14,11 +14,6 @@ class Home extends React.Component {
    render() {
       return (
          <div className="App" id="homePage">
-            {/*          
-         <a >
-            <img id='homePhoto' src={Summer2019} alt='Summer 2019 photo' ></img>
-         </a> */}
-
             <div>
                <div className="image-blurred-edge"></div>
             </div>
@@ -27,8 +22,7 @@ class Home extends React.Component {
                <div id="homeName">Michael Muzzy</div>
                <div id='homePageQuote'>
                   Web Developer At-Large<br />
-            (when I am not at-play)
-         </div>
+            </div>
             </div>
 
          </div>

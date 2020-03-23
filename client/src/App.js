@@ -19,37 +19,40 @@ class App extends React.Component {
     }
   }
 
+  // Handlers for modal window
   handleOpen = () => {
     this.setState({
       modalOpen: true
     })
   }
-
   handleClose = () => {
     this.setState({
       modalOpen: false
     })
   }
 
+  // Main page layout
   render() {
     return (
-      <div>
-        <div id='top'>
-          <Header />
-        </div>
-        <Switch>
-          <Route exact path={'/'} component={Home} />
-          <Route path={'/about'} component={About} />
-          <Route path={'/projects'} component={Projects} />
-          <Route path={'/hobbies'} component={Hobbies} />
-          <Route path={'/work'} component={Work} />
-        </Switch>
-        {/* <div id='bottom'> */}
-          <Footer modalOpen={this.state.modalOpen} handleOpen={this.handleOpen} />
-        {/* </div> */}
-        <div id='modal' style={{ visibility: this.state.modalOpen ? 'visible' : 'hidden' }} >
-          <h1>Hello! I am a Modal</h1>
-          <button id='closeButton' onClick={this.handleClose}>Close modal</button>
+      <div id='body'>
+        <div id='content'>
+          <div id='top'> {/*Header - at top of all pages */}
+            <Header />
+          </div>
+          <Switch>  {/* Component page paths */}
+            <Route exact path={'/'} component={Home} />
+            <Route path={'/about'} component={About} />
+            <Route path={'/projects'} component={Projects} />
+            <Route path={'/hobbies'} component={Hobbies} />
+            <Route path={'/work'} component={Work} />
+          </Switch>
+          <div id='bottom'>  {/* Footer - sticks to bottom and gets pushed down by content */}
+            <Footer modalOpen={this.state.modalOpen} handleOpen={this.handleOpen} />
+          </div>
+          <div id='modal' style={{ visibility: this.state.modalOpen ? 'visible' : 'hidden' }} >
+            <h1>Hello! I am a Modal</h1>
+            <button id='closeButton' onClick={this.handleClose}>Close modal</button>
+          </div>
         </div>
       </div>
     )

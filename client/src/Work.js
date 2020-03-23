@@ -24,7 +24,6 @@ class Work extends React.Component {
                </a>
             </label>
 
-
          </div>
       )
    }

@@ -28,7 +28,7 @@ class About extends React.Component {
                   After a career as an ASE certified Master Automotive Technician, working at local repair garages and dealerships, I joined Good News Garage in 1998.
                </p>
                <p>
-                  I started out in the repair shop, but in 1999 we received a grant through the federal Job Access and Reverse Commute (JARC) program to develop an alternative transportation model intended to address transportation challenges experience by welfare recipients.  I applied for and was hired as the program manager for the new initiative.
+                  I started out in the repair shop, but in 1999 we received a grant through the federal Job Access and Reverse Commute <a id='aboutLink' target="_blank" href='https://www.transit.dot.gov/funding/grants/grant-programs/job-access-and-reverse-commute-program-5316' rel="noopener noreferrer" className='bannerSelector'>(JARC)</a> program to develop an alternative transportation model intended to address transportation challenges experience by welfare recipients.  I applied for and was hired as the program manager for the new initiative.
                </p>
                <p>
                   Over the next 7 years we grew this program from inception to a state-wide transportation service helping low-income families transition from state assistance to self-sufficiency.  The program earned recognition as one of the 100 Best Practices for JARC funded projects.

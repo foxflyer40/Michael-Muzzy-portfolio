@@ -26,7 +26,7 @@ class Projects extends React.Component {
                <a 
                   target="_blank"
                   rel="noopener noreferrer"
-                  href='https://github.com/BurlingtonCodeAcademy/tic-tac-toe-foxflyer40'>
+                  href='https://michael-muzzy-tic-tac-toe.herokuapp.com/'>
                   <img src={(TicTacToe)} alt='Tic-Tac-Toe board'></img>
                </a>
             </label>

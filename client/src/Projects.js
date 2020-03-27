@@ -18,12 +18,19 @@ class Projects extends React.Component {
 
       return (
          <div id='projectsPage'>
-            
+
             <label>
+               
                <div className='projectLabel'>
+               <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href='https://github.com/BurlingtonCodeAcademy/tic-tac-toe-foxflyer40'>
                   Tic Tac Toe
+               </a>
+                  
                </div>
-               <a 
+               <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href='https://michael-muzzy-tic-tac-toe.herokuapp.com/'>
@@ -37,7 +44,7 @@ class Projects extends React.Component {
                <div className='projectLabel'>
                   Yelpington
                </div>
-               <a 
+               <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
@@ -50,9 +57,9 @@ class Projects extends React.Component {
 
             <label>
                <div className='projectLabel'>
-               GeoVermont
+                  GeoVermont
                </div>
-               <a 
+               <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
-import Resume from './media/Resume.PNG'
-import myResume from './media/myResume.pdf'
+import Resume from './media/Resume2020.PNG'
+import myResume from './media/myResume2020.pdf'
 
 class Work extends React.Component {
    constructor(props) {

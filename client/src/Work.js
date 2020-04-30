@@ -6,9 +6,7 @@ import myResume from './media/myResume2020.pdf'
 class Work extends React.Component {
    constructor(props) {
       super(props)
-
       this.state = {
-
       }
    }
 

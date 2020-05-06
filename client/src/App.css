@@ -115,6 +115,10 @@ label {
    margin: 4em;
 }
 
+a {
+   align-items: center;
+   justify-items: center;
+}
 
 #githubWork {
    flex-direction: column;

@@ -118,8 +118,8 @@ label {
 
 #githubWork {
    flex-direction: column;
-   align-content: center;
-   justify-content: center;
+   align-items: center;
+   justify-items: center;
 }
 
 /* Hobby page styling */

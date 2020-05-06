@@ -41,7 +41,7 @@ class Projects extends React.Component {
                <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href='https://http://park-burlington.herokuapp.com//'>
+                  href='https://park-burlington.herokuapp.com//'>
                   <img src={(ParkBTV)} alt='Park Burlington map'></img>
                </a>
             </label>

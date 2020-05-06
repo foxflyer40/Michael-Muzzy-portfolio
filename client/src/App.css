@@ -116,8 +116,8 @@ label {
 }
 
 a {
-   align-items: center;
-   justify-items: center;
+   align-self: center;
+   justify-self: center;
 }
 
 #githubWork {

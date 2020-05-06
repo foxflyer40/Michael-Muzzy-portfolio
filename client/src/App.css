@@ -120,7 +120,7 @@ label {
 #githubWork {
    flex-direction: column;
    margin: 2em;
-   align-content: space-around;
+   align-content: center;
   }
 
 /* Hobby page styling */

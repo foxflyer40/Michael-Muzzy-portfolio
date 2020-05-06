@@ -20,15 +20,8 @@ class Projects extends React.Component {
          <div id='projectsPage'>
 
             <label>
-               
                <div className='projectLabel'>
-               <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href='https://github.com/BurlingtonCodeAcademy/tic-tac-toe-foxflyer40'>
                   Tic Tac Toe
-               </a>
-                  
                </div>
                <a
                   target="_blank"

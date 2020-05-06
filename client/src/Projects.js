@@ -19,7 +19,7 @@ class Projects extends React.Component {
 
       return (
          <div id='projectsPage'>
-            <div id='herokuWork'>Click Image to go to App
+           
                <label>
                   <div className='projectLabel'>
                      Tic Tac Toe
@@ -43,7 +43,7 @@ class Projects extends React.Component {
                      <img src={(ParkBTV)} alt='Park Burlington map'></img>
                   </a>
                </label>
-            </div>
+           
 
             <div id='githubWork'>Click image to go to GitHub
 

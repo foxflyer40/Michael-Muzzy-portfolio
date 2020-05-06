@@ -21,8 +21,7 @@ class Home extends React.Component {
             <div>
                <div id="homeName">Michael Muzzy</div>
                <div id='homePageQuote'>
-                  Web Developer<br />
-                  Business Operations
+                  Web Developer - Business Operations
             </div>
             </div>
 

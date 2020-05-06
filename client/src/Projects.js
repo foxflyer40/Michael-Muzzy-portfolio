@@ -35,6 +35,20 @@ class Projects extends React.Component {
 
             <label>
                <div className='projectLabel'>
+                  Park Burlington 
+               </div>
+               <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href='https://http://park-burlington.herokuapp.com//'>
+                  <img src={(ParkBTV)} alt='Park Burlington map'></img>
+               </a>
+            </label>
+
+            <br />
+
+            <label>
+               <div className='projectLabel'>
                   Yelpington
                </div>
                <a

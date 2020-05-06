@@ -116,12 +116,12 @@ label {
 }
 
 
+
 #githubWork {
    flex-direction: column;
    margin: 2em;
-   align-items: center;
-   justify-items: center;
-}
+   align-content: space-around;
+  }
 
 /* Hobby page styling */
 

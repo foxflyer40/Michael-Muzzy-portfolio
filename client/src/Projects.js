@@ -18,7 +18,7 @@ class Projects extends React.Component {
       console.log(TicTacToe)
 
       return (
-         <div id='projectsPage'>Click Images
+         <div id='projectsPage'>
            
                <label>
                   <div className='projectLabel'>

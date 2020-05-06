@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import TicTacToe from './media/TicTacToe.PNG';
-import GeoVermont from './media/GeoVermont.PNG'
-import Yelpington from './media/Yelpington.PNG'
+import GeoVermont from './media/GeoVermont.PNG';
+import Yelpington from './media/Yelpington.PNG';
+import ParkBTV from './media/ParkBTV.PNG'
 
 class Projects extends React.Component {
    constructor(props) {

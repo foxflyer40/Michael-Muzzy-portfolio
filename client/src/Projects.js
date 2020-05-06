@@ -50,28 +50,28 @@ class Projects extends React.Component {
                <label>
                   <div className='projectLabel'>
                      Yelpington
-               </div>
+               
                   <a
                      target="_blank"
                      rel="noopener noreferrer"
                      href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
                      <img src={(Yelpington)} alt='Yelpington board'></img>
                   </a>
-
+                  </div>
                </label>
 
 
                <label>
                   <div className='projectLabel'>
                      GeoVermont
-               </div>
+              
                   <a
                      target="_blank"
                      rel="noopener noreferrer"
                      href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
                      <img src={(GeoVermont)} alt='GeoVermont board'></img>
                   </a>
-
+                  </div>
                </label>
             </div>
          </div>

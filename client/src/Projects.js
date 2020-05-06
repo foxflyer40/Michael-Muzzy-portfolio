@@ -51,6 +51,7 @@ class Projects extends React.Component {
                   <div className='projectLabel'>
                      Yelpington
                <br/>
+               <br/>
                   <a
                      target="_blank"
                      rel="noopener noreferrer"
@@ -64,6 +65,7 @@ class Projects extends React.Component {
                <label>
                   <div className='projectLabel'>
                      GeoVermont
+              <br/>
               <br/>
                   <a
                      target="_blank"

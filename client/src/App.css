@@ -112,16 +112,13 @@ html, body {
 }
 
 label {
-   margin: 4em;
+   margin: 2em;
 }
 
-a {
-   align-self: center;
-   justify-self: center;
-}
 
 #githubWork {
    flex-direction: column;
+   margin: 2em;
    align-items: center;
    justify-items: center;
 }

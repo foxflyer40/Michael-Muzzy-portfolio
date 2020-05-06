@@ -115,8 +115,14 @@ label {
    margin: 4em;
 }
 
+#herokuWork {
+   flex-direction: row;
+  
+}
+
 #githubWork {
    flex-direction: column;
+   align-items: center;
 }
 
 /* Hobby page styling */

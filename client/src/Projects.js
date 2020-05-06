@@ -18,7 +18,7 @@ class Projects extends React.Component {
       console.log(TicTacToe)
 
       return (
-         <div id='projectsPage'>
+         <div id='projectsPage'>Click Images
            
                <label>
                   <div className='projectLabel'>
@@ -45,7 +45,7 @@ class Projects extends React.Component {
                </label>
            
 
-            <div id='githubWork'>Click image to go to GitHub
+            <div id='githubWork'>
 
                <label>
                   <div className='projectLabel'>

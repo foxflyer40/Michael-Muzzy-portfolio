@@ -61,7 +61,7 @@ class Projects extends React.Component {
 
             </label>
 
-            <br />
+            {/* <br /> */}
 
             <label>
                <div className='projectLabel'>

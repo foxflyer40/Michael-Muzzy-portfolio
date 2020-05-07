@@ -19,7 +19,7 @@ class About extends React.Component {
 
             <div id='aboutContent'>
                <p>
-                  I am a native Vermonter with a 37-year-old degree in programming. (Champlain College class of 1983 - A.S. Data Processing)  Funny thing is... I never used it.  Till now.
+                  I am a native Vermonter with a 37-year-old degree in programming. (Champlain College class of 1983 - A.S. Data Processing)  Funny thing is... I never used it.  Til now.
                </p>
                <p>
                   I am currently enrolled at Burlington Code Academy, training to enter my third career, as a Full Stack Web Developer.

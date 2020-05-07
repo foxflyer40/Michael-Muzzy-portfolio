@@ -73,13 +73,13 @@ html, body {
 }
 
 #homeName {
-   margin-left: 3em;
+   margin-left: 2em;
    font-size: 2em;
    font-weight: 700;
 }
 
 #homePageQuote {
-   margin-left: 4em;
+   margin-left: 3em;
    font-size: 1.5em;
    font-weight: 500;
 }
@@ -87,7 +87,7 @@ html, body {
 @media screen and (max-width: 750px) {
    #homeName #homePageQuote {
       align-content: center;
-      margin: 0em;
+      margin-left: 0em;
    }
 }
 

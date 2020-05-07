@@ -30,7 +30,7 @@ class Hobbies extends React.Component {
 
             <label >
                <div className='hobbyLabel'>
-                  Photography(will build a carousel or link to gallery)
+                  Photography (link to gallery coming soon)
                </div>
                <a href='/'>
                   <img src={(Echo)} alt='Link to Photography'></img>

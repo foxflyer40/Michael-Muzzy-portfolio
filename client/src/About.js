@@ -22,7 +22,7 @@ class About extends React.Component {
                   I am a native Vermonter with a 37-year-old degree in programming. (Champlain College class of 1983 - A.S. Data Processing)  Funny thing is... I never used it.  Til now.
                </p>
                <p>
-                  I am currently enrolled at Burlington Code Academy, training to enter my third career, as a Full Stack Web Developer.
+                  I completed the Boot-Camp at Burlington Code Academy at the end of April, 2020.  Now ready to enter my third career, as a Full Stack Web Developer.
                </p>
                <p>
                   After a career as an ASE certified Master Automotive Technician, working at local repair garages and dealerships, I joined Good News Garage in 1998.

@@ -24,6 +24,8 @@ class Home extends React.Component {
                   Web Developer
                   <br/>
                   Business Operations
+                  <br/>
+                  RC Airplane Pilot
             </div>
             </div>
 

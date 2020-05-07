@@ -91,7 +91,7 @@ html, body {
    margin-left: 3em;
    font-size: 1.5em;
    font-weight: 500;
-}
+  }
 
 @media screen and (max-width: 750px) {
    #homeName {
@@ -106,6 +106,7 @@ html, body {
       align-content: center;
       margin-left: 0em;
       font-size: 1em;
+      margin-bottom: 1em;
    }
 }
 

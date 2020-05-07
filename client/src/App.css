@@ -37,6 +37,12 @@ html, body {
    color: rgb(12, 108, 187);
    font-weight: 500;
 }
+@media screen and (max-width: 750px) {
+   .bannerSelector {
+      font-size: medium;
+      font-weight: 400;
+   }
+}
 
 /* Home Page Styling */
 

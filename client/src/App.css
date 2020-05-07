@@ -62,7 +62,7 @@ html, body {
    height: 472px;
    border-radius: 5em;
    box-shadow: 0 0 8px 8px white inset;
-   margin-right: 4em;
+   margin-right: 3em;
 }
 
 @media screen and (max-width: 750px) {
@@ -85,7 +85,14 @@ html, body {
 }
 
 @media screen and (max-width: 750px) {
-   #homeName #homePageQuote {
+   #homeName {
+      align-content: center;
+      margin-left: 0em;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   #homePageQuote {
       align-content: center;
       margin-left: 0em;
    }

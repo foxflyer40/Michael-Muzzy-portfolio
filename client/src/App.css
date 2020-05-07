@@ -53,7 +53,7 @@ html, body {
 .image-blurred-edge {
    background-image: url(./media/Profile.png);
    width: 372px;
-   height: 485px;
+   height: 472px;
    border-radius: 5em;
    box-shadow: 0 0 8px 8px white inset;
    margin-right: 4em;

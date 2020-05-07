@@ -40,7 +40,7 @@ class About extends React.Component {
                   This second career as a non-profit director allowed me to use my sytems-diagnosis and problem-solving skills, learned in the automotive industry, applied now to human teams and dynamics.  Where poorly functioning parts and systems in a vehicle can simply be replaced, people and teams need to be led and ‘grown’ into more highly functional states.
                </p>
                <p>
-                  This return to my college education blends both elements.  On the software and development end of things, careful diagnosis (debugging) and specific corrections need to be made.  But Apps are used by human beings, and so I hope to leverage my experience working with diverse stakeholders and partners to help build technology that is accessible to people.
+                  This return to my college education blends both elements.  On the software and development end of things, careful diagnosis (debugging) and specific corrections need to be made.  But Apps are used by human beings, and so I hope to leverage my experience working with diverse stakeholders and partners to help build technology that is accessible to people, and helps them to grow into their full potential.
                </p>
             </div>
          </div>

@@ -241,3 +241,10 @@ label {
    color: rgb(12, 108, 187);
    font-weight: 500;
 }
+
+@media screen and (max-width: 750px) {
+   .footerSelector {
+      font-size: medium;
+      font-weight: 400;
+   }
+}

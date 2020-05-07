@@ -50,6 +50,12 @@ html, body {
    color: rgb(12, 108, 187);
 }
 
+@media screen and (max-width: 600px) {
+   #homePage {
+      flex-direction: column-reverse;
+   }
+}
+
 .image-blurred-edge {
    background-image: url(./media/Profile.png);
    width: 372px;

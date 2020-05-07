@@ -135,6 +135,7 @@ label {
 }
 
 .hobbyLabel {
+   margin-top: 2em;
    margin-bottom: 1em;
    text-align: center;
    font-size: 1.5em;
@@ -153,6 +154,7 @@ label {
 }
 
 .workLabel {
+   margin-top: 2em;
    margin-bottom: 2em;
    text-align: center;
    font-size: 1.2em;

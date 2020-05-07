@@ -179,7 +179,7 @@ label {
    position: absolute;
    top: 0em;
    background-color: rgba(0, 0, 0, .8);
-   justify-items: left;
+   justify-items: center;
    align-items: center;
    margin: 0em;
    padding: 0em;

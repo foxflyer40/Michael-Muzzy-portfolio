@@ -84,6 +84,13 @@ html, body {
    font-weight: 500;
 }
 
+@media screen and (max-width: 750px) {
+   #homeName #homePageQuote {
+      align-content: center;
+      margin: 0em;
+   }
+}
+
 /* About page styling */
 
 #aboutPage {

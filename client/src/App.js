@@ -50,8 +50,8 @@ class App extends React.Component {
             <Footer modalOpen={this.state.modalOpen} handleOpen={this.handleOpen} />
           </div>
           <div id='modal' style={{ visibility: this.state.modalOpen ? 'visible' : 'hidden' }} >
-            <h1>Hello! I am a Modal</h1>
             <button id='closeButton' onClick={this.handleClose}>Close modal</button>
+            <h1>Contact Info Coming Soon</h1>
           </div>
         </div>
       </div>

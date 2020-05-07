@@ -37,6 +37,7 @@ html, body {
    color: rgb(12, 108, 187);
    font-weight: 500;
 }
+
 @media screen and (max-width: 750px) {
    .bannerSelector {
       font-size: medium;
@@ -75,6 +76,8 @@ html, body {
    .image-blurred-edge {
       align-content: center;
       margin: 0em;
+      width: 250px;
+      height: 317px;
    }
 }
 
@@ -94,6 +97,7 @@ html, body {
    #homeName {
       align-content: center;
       margin-left: 0em;
+      font-size: 1.5em;
    }
 }
 
@@ -101,6 +105,7 @@ html, body {
    #homePageQuote {
       align-content: center;
       margin-left: 0em;
+      font-size: 1em;
    }
 }
 
@@ -122,8 +127,6 @@ html, body {
    font-size: 1.2em;
    font-weight: 500;
 }
-
-
 
 /* Projects page styling */
 
@@ -148,13 +151,11 @@ label {
    margin: 2em;
 }
 
-
-
 #githubWork {
    flex-direction: column;
    margin: 2em;
    align-content: center;
-  }
+}
 
 /* Hobby page styling */
 

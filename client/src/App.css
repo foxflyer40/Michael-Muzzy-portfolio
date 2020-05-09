@@ -151,6 +151,15 @@ html, body {
    color: rgb(12, 108, 187);
 }
 
+@media screen and (max-width: 770px) {
+   #projectsPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+     }
+}
+
 .projectLabel {
    margin-bottom: none;
    text-align: center;

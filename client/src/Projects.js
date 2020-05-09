@@ -20,6 +20,21 @@ class Projects extends React.Component {
       return (
          <div id='projectsPage'>
            
+                             <label>
+                  <div className='projectLabel'>
+                     Park Burlington
+                     <br/>
+                     (BCA capstone project)
+               </div>
+               <br/>
+                  <a
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href='http://park-burlington.herokuapp.com/'>
+                     <img src={(ParkBTV)} alt='Park Burlington map'></img>
+                  </a>
+               </label>
+
                <label>
                   <div className='projectLabel'>
                      Tic Tac Toe
@@ -33,18 +48,6 @@ class Projects extends React.Component {
                   </a>
                </label>
 
-               <label>
-                  <div className='projectLabel'>
-                     Park Burlington
-               </div>
-               <br/>
-                  <a
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     href='http://park-burlington.herokuapp.com/'>
-                     <img src={(ParkBTV)} alt='Park Burlington map'></img>
-                  </a>
-               </label>
            
 
             <div id='githubWork'>

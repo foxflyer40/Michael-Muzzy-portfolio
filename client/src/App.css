@@ -160,6 +160,9 @@ html, body {
      }
 }
 
+h6 {
+   margin: .1em;
+}
 .projectLabel {
    margin-bottom: none;
    text-align: center;

@@ -151,6 +151,10 @@ html, body {
    color: rgb(12, 108, 187);
 }
 
+#publishedWork {
+   flex-direction: row;
+}
+
 @media screen and (max-width: 770px) {
    #projectsPage {
       display: flex;

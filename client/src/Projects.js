@@ -19,12 +19,12 @@ class Projects extends React.Component {
 
       return (
          <div id='projectsPage'>
-            <div id='publishedWork'>
+           
                <label>
                   <div className='projectLabel'>
                      Tic Tac Toe
                </div>
-                  <br />
+               <br/>
                   <a
                      target="_blank"
                      rel="noopener noreferrer"
@@ -37,7 +37,7 @@ class Projects extends React.Component {
                   <div className='projectLabel'>
                      Park Burlington
                </div>
-                  <br />
+               <br/>
                   <a
                      target="_blank"
                      rel="noopener noreferrer"
@@ -45,21 +45,21 @@ class Projects extends React.Component {
                      <img src={(ParkBTV)} alt='Park Burlington map'></img>
                   </a>
                </label>
-            </div>
+           
 
             <div id='githubWork'>
 
                <label>
                   <div className='projectLabel'>
                      Yelpington
-               <br />
-                     <br />
-                     <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
-                        <img src={(Yelpington)} alt='Yelpington board'></img>
-                     </a>
+               <br/>
+               <br/>
+                  <a
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
+                     <img src={(Yelpington)} alt='Yelpington board'></img>
+                  </a>
                   </div>
                </label>
 
@@ -67,14 +67,14 @@ class Projects extends React.Component {
                <label>
                   <div className='projectLabel'>
                      GeoVermont
-              <br />
-                     <br />
-                     <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
-                        <img src={(GeoVermont)} alt='GeoVermont board'></img>
-                     </a>
+              <br/>
+              <br/>
+                  <a
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
+                     <img src={(GeoVermont)} alt='GeoVermont board'></img>
+                  </a>
                   </div>
                </label>
             </div>

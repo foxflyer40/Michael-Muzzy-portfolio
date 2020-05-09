@@ -19,50 +19,50 @@ class Projects extends React.Component {
 
       return (
          <div id='projectsPage'>
-           
-                             <label>
-                  <div className='projectLabel'>
-                     Park Burlington
-                     <br/>
+
+            <label>
+               <div className='projectLabel'>
+                  Park Burlington
+                     <br />
                      (BCA capstone project)
                </div>
-               <br/>
-                  <a
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     href='http://park-burlington.herokuapp.com/'>
-                     <img src={(ParkBTV)} alt='Park Burlington map'></img>
-                  </a>
-               </label>
+               <br />
+               <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href='http://park-burlington.herokuapp.com/'>
+                  <img src={(ParkBTV)} alt='Park Burlington map'></img>
+               </a>
+            </label>
 
-               <label>
-                  <div className='projectLabel'>
-                     Tic Tac Toe
+            <label>
+               <div className='projectLabel'>
+                  Tic Tac Toe
                </div>
-               <br/>
-                  <a
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     href='https://michael-muzzy-tic-tac-toe.herokuapp.com/'>
-                     <img src={(TicTacToe)} alt='Tic-Tac-Toe board'></img>
-                  </a>
-               </label>
+               <br />
+               <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href='https://michael-muzzy-tic-tac-toe.herokuapp.com/'>
+                  <img src={(TicTacToe)} alt='Tic-Tac-Toe board'></img>
+               </a>
+            </label>
 
-           
+
 
             <div id='githubWork'>
 
                <label>
                   <div className='projectLabel'>
                      Yelpington
-               <br/>
-               <br/>
-                  <a
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
-                     <img src={(Yelpington)} alt='Yelpington board'></img>
-                  </a>
+               <br />
+                     <br />
+                     <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
+                        <img src={(Yelpington)} alt='Yelpington board'></img>
+                     </a>
                   </div>
                </label>
 
@@ -70,14 +70,14 @@ class Projects extends React.Component {
                <label>
                   <div className='projectLabel'>
                      GeoVermont
-              <br/>
-              <br/>
-                  <a
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
-                     <img src={(GeoVermont)} alt='GeoVermont board'></img>
-                  </a>
+              <br />
+                     <br />
+                     <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
+                        <img src={(GeoVermont)} alt='GeoVermont board'></img>
+                     </a>
                   </div>
                </label>
             </div>

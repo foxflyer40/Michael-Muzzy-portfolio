@@ -129,6 +129,16 @@ html, body {
    font-weight: 500;
 }
 
+
+@media screen and (max-width: 750px) {
+   #aboutContent {
+      padding-left: .3em;
+      padding-right: .3em;
+      font-size: .8em;
+      font-weight: 400;
+   }
+}
+
 /* Projects page styling */
 
 #projectsPage {

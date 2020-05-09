@@ -23,8 +23,7 @@ class Projects extends React.Component {
             <label>
                <div className='projectLabel'>
                   Park Burlington
-                     <br />
-                     <h6>(BCA capstone project)</h6>
+                  <h6>(BCA capstone project)</h6>
                </div>
                <br />
                <a

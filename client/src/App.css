@@ -38,7 +38,7 @@ html, body {
    font-weight: 500;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    .bannerSelector {
       font-size: medium;
       font-weight: 400;
@@ -57,7 +57,7 @@ html, body {
    color: rgb(12, 108, 187);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    #homePage {
       flex-direction: column-reverse;
    }
@@ -72,7 +72,7 @@ html, body {
    margin-right: 3em;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    .image-blurred-edge {
       align-content: center;
       margin: 0em;
@@ -93,7 +93,7 @@ html, body {
    font-weight: 500;
   }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    #homeName {
       align-content: center;
       margin-left: 0em;
@@ -101,7 +101,7 @@ html, body {
    }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    #homePageQuote {
       align-content: center;
       margin-left: 0em;
@@ -130,7 +130,7 @@ html, body {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    #aboutContent {
       padding-left: .3em;
       padding-right: .3em;
@@ -254,7 +254,7 @@ label {
    font-weight: 500;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
    .footerSelector {
       font-size: medium;
       font-weight: 400;

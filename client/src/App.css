@@ -182,7 +182,7 @@ label {
 }
 
 #githubLabel {
-   margin: none;
+   align-content: center;
 }
 
 /* Hobby page styling */

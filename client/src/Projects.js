@@ -32,6 +32,7 @@ class Projects extends React.Component {
                   href='http://park-burlington.herokuapp.com/'>
                   <img src={(ParkBTV)} alt='Park Burlington map'></img>
                </a>
+               <h6>(Demo version)</h6>
             </label>
 
             <label>

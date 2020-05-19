@@ -246,12 +246,12 @@ label {
    width: 90vw;
    height: 90vh;
    z-index: 3000;
-   position: relative;
+   position: absolute;
    top: 1em;
    background-color: rgba(0, 0, 0, .8);
    justify-items: center;
    align-items: center;
-   margin: 1em;
+   margin: 5vmin;
    padding: 0em;
    color: white;
 }

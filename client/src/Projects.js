@@ -51,7 +51,7 @@ class Projects extends React.Component {
 
             <div id='githubWork'>
 
-               <label id='githubLabel'>Links to Github
+               <label1 id='githubLabel'>Links to Github
                   <div className='projectLabel'>
                      Yelpington
                <br />
@@ -63,7 +63,7 @@ class Projects extends React.Component {
                         <img src={(Yelpington)} alt='Yelpington board'></img>
                      </a>
                   </div>
-               </label>
+               </label1>
 
 
                <label>

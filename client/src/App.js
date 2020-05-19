@@ -53,7 +53,7 @@ class App extends React.Component {
             <br/>
             <button id='closeButton' onClick={this.handleClose}>Close Window</button>
             <br/>
-            <h1>Contact Info Coming Soon</h1>
+            <h3>Contact Form Coming Soon</h3>
           </div>
         </div>
       </div>

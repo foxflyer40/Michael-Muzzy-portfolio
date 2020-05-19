@@ -51,7 +51,7 @@ class Projects extends React.Component {
 
             <div id='githubWork'>
 
-               <label>
+               <label>Links to Github
                   <div className='projectLabel'>
                      Yelpington
                <br />

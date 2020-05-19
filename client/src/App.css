@@ -162,6 +162,7 @@ html, body {
 
 h6 {
    margin: .1em;
+   text-align: center;
 }
 .projectLabel {
    margin-bottom: none;

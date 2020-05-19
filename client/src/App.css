@@ -241,11 +241,11 @@ label {
 #modal {
    display: flex;
    flex-direction: column;
-   width: 100vw;
-   height: 100vh;
+   width: 90vw;
+   height: 90vh;
    z-index: 3000;
    position: absolute;
-   top: 0em;
+   top: 1em;
    background-color: rgba(0, 0, 0, .8);
    justify-items: center;
    align-items: center;

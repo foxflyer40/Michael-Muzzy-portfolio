@@ -243,15 +243,15 @@ label {
    flex-direction: column;
    align-self: center;
    justify-self: center;
-   width: 95vw;
-   height: 95vh;
+   width: 90vw;
+   height: 90vh;
    z-index: 3000;
    position: absolute;
    top: 0em;
    background-color: rgba(0, 0, 0, .8);
    justify-items: center;
    align-items: center;
-   margin: auto;
+   margin: 5%;
    padding: 0em;
    color: white;
 }

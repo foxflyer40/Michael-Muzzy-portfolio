@@ -1,6 +1,6 @@
 import React from 'react'
-import RCAV8R from './media/RCAV8R.jpg'
-import Echo from './media/Echo.jpg'
+import RCAV8R from './media/RCAV8Rsm.jpg'
+import Echo from './media/Echosm.jpg'
 
 
 class Hobbies extends React.Component {

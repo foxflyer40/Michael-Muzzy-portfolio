@@ -51,9 +51,10 @@ class Projects extends React.Component {
 
             <div id='githubWork'>
 
-               <label1 id='githubLabel'>Links to Github
+               <label>
                   <div className='projectLabel'>
                      Yelpington
+                     <h6>(Github link)</h6>
                <br />
                      <br />
                      <a
@@ -63,12 +64,13 @@ class Projects extends React.Component {
                         <img src={(Yelpington)} alt='Yelpington board'></img>
                      </a>
                   </div>
-               </label1>
+               </label>
 
 
                <label>
                   <div className='projectLabel'>
                      GeoVermont
+                     <h6>(Github link)</h6>
               <br />
                      <br />
                      <a

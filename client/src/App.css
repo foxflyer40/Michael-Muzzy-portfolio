@@ -181,6 +181,10 @@ label {
    align-content: center;
 }
 
+#githubLabel {
+   margin: none;
+}
+
 /* Hobby page styling */
 
 #hobbyPage {

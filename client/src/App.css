@@ -243,8 +243,8 @@ label {
    flex-direction: column;
    align-self: center;
    justify-self: center;
-   width: 90vw;
-   height: 90vh;
+   width: 100vw;
+   height: 100vh;
    z-index: 3000;
    position: absolute;
    top: 0em;

@@ -246,7 +246,7 @@ label {
    width: 90vw;
    height: 90vh;
    z-index: 3000;
-   position: absolute;
+   position: relative;
    top: 1em;
    background-color: rgba(0, 0, 0, .8);
    justify-items: center;

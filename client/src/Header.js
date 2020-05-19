@@ -35,7 +35,7 @@ class Header extends React.Component {
             </Link>
 
             <Link to={'/work'} className='bannerSelector'>
-               <div >Work</div>
+               <div >Resume</div>
             </Link>
 
          </div>

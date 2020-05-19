@@ -55,7 +55,6 @@ class Projects extends React.Component {
                   <div className='projectLabel'>
                      Yelpington
                      <h6>(Github link)</h6>
-               <br />
                      <br />
                      <a
                         target="_blank"
@@ -71,7 +70,6 @@ class Projects extends React.Component {
                   <div className='projectLabel'>
                      GeoVermont
                      <h6>(Github link)</h6>
-              <br />
                      <br />
                      <a
                         target="_blank"

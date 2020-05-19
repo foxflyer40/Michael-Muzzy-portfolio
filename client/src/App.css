@@ -193,6 +193,15 @@ label {
    color: rgb(12, 108, 187);
 }
 
+@media screen and (max-width: 770px) {
+   #hobbyPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+     }
+}
+
 .hobbyLabel {
    margin-top: 2em;
    margin-bottom: 1em;

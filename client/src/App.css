@@ -241,6 +241,8 @@ label {
 #modal {
    display: flex;
    flex-direction: column;
+   align-self: center;
+   justify-self: center;
    width: 90vw;
    height: 90vh;
    z-index: 3000;

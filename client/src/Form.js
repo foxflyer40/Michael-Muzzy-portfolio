@@ -39,7 +39,7 @@ export const Form = ({ onSubmit }) => {
       <br />
       <br />
 
-      <button className="form-control btn btn-primary" type="submit">
+      <button id='submit-button' type="submit">
         Submit
         </button>
 

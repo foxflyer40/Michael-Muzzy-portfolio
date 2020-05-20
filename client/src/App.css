@@ -265,7 +265,15 @@ align-content: flex-start;
 }
 
 .form-label {
-   margin-left: none;
+   margin-left: 5px;
+}
+
+.form-control {
+   width: 250;
+}
+
+#message {
+   height: 3em;
 }
 
 

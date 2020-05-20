@@ -256,6 +256,19 @@ label {
    color: white;
 }
 
+/* Form Styling */
+
+#form {
+width: 250px;
+height: 500px;
+align-content: flex-start;
+}
+
+.form-label {
+   margin-left: none;
+}
+
+
 /* Footer Styling */
 
 #bottom {

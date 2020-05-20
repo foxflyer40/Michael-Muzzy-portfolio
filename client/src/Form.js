@@ -2,10 +2,10 @@ import React from 'react';
 
 export const Form = ({ onSubmit }) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form id='form' onSubmit={onSubmit}>
 
       <div className="form-group">
-        <label htmlFor="name">Name</label>
+        <label className="form-label" htmlFor="name">Name</label>
         <br />
         <input
           className="form-control"
@@ -14,7 +14,7 @@ export const Form = ({ onSubmit }) => {
       <br />
 
       <div className="form-group">
-        <label htmlFor="email">Email address</label>
+        <label className="form-label" htmlFor="email">Email address</label>
         <br />
         <input
           type="email"
@@ -26,7 +26,7 @@ export const Form = ({ onSubmit }) => {
       <br />
 
       <div className="form-group">
-        <label htmlFor="message">Message</label>
+        <label className="form-label" htmlFor="message">Message</label>
         <br />
         <input
           className="form-control"

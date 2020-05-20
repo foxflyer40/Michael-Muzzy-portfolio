@@ -3,13 +3,16 @@ import React from 'react';
 export const Form = ({ onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
-      
+
       <div className="form-group">
         <label htmlFor="name">Name</label>
         <br />
-        <input className="form-control" id="name" />
+        <input
+          className="form-control"
+          id="name" />
       </div>
-     
+      <br />
+
       <div className="form-group">
         <label htmlFor="email">Email address</label>
         <br />
@@ -20,21 +23,23 @@ export const Form = ({ onSubmit }) => {
           placeholder="name@example.com"
         />
       </div>
-      
+      <br />
+
       <div className="form-group">
-        <label htmlFor="email">Message</label>
+        <label htmlFor="message">Message</label>
         <br />
         <input
           className="form-control"
           id="message"
-         />
+        />
       </div>
       <br />
-      
-        <button className="form-control btn btn-primary" type="submit">
-          Submit
+      <br />
+
+      <button className="form-control btn btn-primary" type="submit">
+        Submit
         </button>
-     
+
     </form>
   );
 };

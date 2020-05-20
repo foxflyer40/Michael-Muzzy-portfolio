@@ -269,11 +269,11 @@ align-content: flex-start;
 }
 
 .form-control {
-   width: 250;
+   width: 250px;
 }
 
 #message {
-   height: 3em;
+   height: 5em;
 }
 
 

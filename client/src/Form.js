@@ -6,11 +6,13 @@ export const Form = ({ onSubmit }) => {
       
       <div className="form-group">
         <label htmlFor="name">Name</label>
+        <br />
         <input className="form-control" id="name" />
       </div>
      
       <div className="form-group">
         <label htmlFor="email">Email address</label>
+        <br />
         <input
           type="email"
           className="form-control"
@@ -21,17 +23,18 @@ export const Form = ({ onSubmit }) => {
       
       <div className="form-group">
         <label htmlFor="email">Message</label>
+        <br />
         <input
           className="form-control"
           id="message"
          />
       </div>
-
-      <div className="form-group">
+      <br />
+      
         <button className="form-control btn btn-primary" type="submit">
           Submit
         </button>
-      </div>
+     
     </form>
   );
 };

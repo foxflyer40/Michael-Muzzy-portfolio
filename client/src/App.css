@@ -276,6 +276,9 @@ align-content: flex-start;
    height: 5em;
 }
 
+#submit-button {
+   align-self: center;
+}
 
 /* Footer Styling */
 

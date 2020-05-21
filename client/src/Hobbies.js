@@ -1,6 +1,6 @@
 import React from 'react'
-import RCAV8R from './media/RCAV8R.jpg'
-import Echo from './media/Echo.jpg'
+import RCAV8R from './media/RCAV8Rsm.jpg'
+import Echo from './media/Echosm.jpg'
 
 
 class Hobbies extends React.Component {
@@ -30,7 +30,8 @@ class Hobbies extends React.Component {
 
             <label >
                <div className='hobbyLabel'>
-                  Photography(will build a carousel or link to gallery)
+                  Photography
+                  <h6>(link to gallery coming soon)</h6> 
                </div>
                <a href='/'>
                   <img src={(Echo)} alt='Link to Photography'></img>

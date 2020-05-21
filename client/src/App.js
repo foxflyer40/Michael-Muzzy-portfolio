@@ -8,6 +8,7 @@ import Projects from './Projects';
 import Hobbies from './Hobbies';
 import Work from './Work';
 import Footer from './Footer'
+import Form from './Form'
 
 class App extends React.Component {
   constructor(props) {
@@ -49,11 +50,16 @@ class App extends React.Component {
           <div id='bottom'>  {/* Footer - sticks to bottom and gets pushed down by content */}
             <Footer modalOpen={this.state.modalOpen} handleOpen={this.handleOpen} />
           </div>
+
+
           <div id='modal' style={{ visibility: this.state.modalOpen ? 'visible' : 'hidden' }} >
-            <h1>Hello! I am a Modal</h1>
-            <button id='closeButton' onClick={this.handleClose}>Close modal</button>
+            <br />
+            <button id='closeButton' onClick={this.handleClose}>Close Window</button>
+            <br />
+           <Form />
           </div>
         </div>
+
       </div>
     )
   }

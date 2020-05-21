@@ -38,6 +38,13 @@ html, body {
    font-weight: 500;
 }
 
+@media screen and (max-width: 770px) {
+   .bannerSelector {
+      font-size: medium;
+      font-weight: 400;
+   }
+}
+
 /* Home Page Styling */
 
 #homePage {
@@ -50,17 +57,32 @@ html, body {
    color: rgb(12, 108, 187);
 }
 
+@media screen and (max-width: 770px) {
+   #homePage {
+      flex-direction: column-reverse;
+   }
+}
+
 .image-blurred-edge {
-   background-image: url(./media/Summer2019.jpg);
+   background-image: url(./media/Profile.png);
    width: 372px;
-   height: 485px;
+   height: 472px;
    border-radius: 5em;
    box-shadow: 0 0 8px 8px white inset;
-   margin-right: 4em;
+   margin-right: 3em;
+}
+
+@media screen and (max-width: 770px) {
+   .image-blurred-edge {
+      align-content: center;
+      margin: 0em;
+      width: 250px;
+      height: 317px;
+   }
 }
 
 #homeName {
-   margin-left: 3em;
+   margin-left: 2em;
    font-size: 2em;
    font-weight: 700;
 }
@@ -69,6 +91,23 @@ html, body {
    margin-left: 3em;
    font-size: 1.5em;
    font-weight: 500;
+  }
+
+@media screen and (max-width: 770px) {
+   #homeName {
+      align-content: center;
+      margin-left: 0em;
+      font-size: 1.5em;
+   }
+}
+
+@media screen and (max-width: 770px) {
+   #homePageQuote {
+      align-content: center;
+      margin-left: 0em;
+      font-size: 1em;
+      margin-bottom: 1em;
+   }
 }
 
 /* About page styling */
@@ -91,6 +130,14 @@ html, body {
 }
 
 
+@media screen and (max-width: 770px) {
+   #aboutContent {
+      padding-left: .3em;
+      padding-right: .3em;
+      font-size: .8em;
+      font-weight: 400;
+   }
+}
 
 /* Projects page styling */
 
@@ -104,15 +151,35 @@ html, body {
    color: rgb(12, 108, 187);
 }
 
+@media screen and (max-width: 770px) {
+   #projectsPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+     }
+}
+
+h6 {
+   margin: .1em;
+   text-align: center;
+}
 .projectLabel {
-   margin-bottom: 1em;
+   margin-bottom: none;
    text-align: center;
    font-size: 1.5em;
    font-weight: 500;
+   align-items: center;
 }
 
 label {
-   margin: 4em;
+   margin: 2em;
+}
+
+#githubWork {
+   flex-direction: column;
+   margin: 2em;
+   align-content: center;
 }
 
 /* Hobby page styling */
@@ -126,7 +193,17 @@ label {
    color: rgb(12, 108, 187);
 }
 
+@media screen and (max-width: 770px) {
+   #hobbyPage {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+     }
+}
+
 .hobbyLabel {
+   margin-top: 2em;
    margin-bottom: 1em;
    text-align: center;
    font-size: 1.5em;
@@ -145,6 +222,7 @@ label {
 }
 
 .workLabel {
+   margin-top: 2em;
    margin-bottom: 2em;
    text-align: center;
    font-size: 1.2em;
@@ -163,16 +241,43 @@ label {
 #modal {
    display: flex;
    flex-direction: column;
-   width: 100vw;
-   height: 100vh;
+   align-self: center;
+   justify-self: center;
+   width: 90vw;
+   height: 90vh;
    z-index: 3000;
    position: absolute;
    top: 0em;
    background-color: rgba(0, 0, 0, .8);
-   justify-items: left;
+   justify-items: center;
    align-items: center;
-   margin: 0em;
+   margin: 1% 5% 9%;
    padding: 0em;
+   color: white;
+}
+
+/* Form Styling */
+
+#form {
+width: 250px;
+height: 500px;
+align-content: flex-start;
+}
+
+.form-label {
+   margin-left: 5px;
+}
+
+.form-control {
+   width: 250px;
+}
+
+#message {
+   height: 5em;
+}
+
+#submit-button {
+   align-self: center;
 }
 
 /* Footer Styling */
@@ -196,4 +301,11 @@ label {
    text-decoration: none;
    color: rgb(12, 108, 187);
    font-weight: 500;
+}
+
+@media screen and (max-width: 770px) {
+   .footerSelector {
+      font-size: medium;
+      font-weight: 400;
+   }
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import TicTacToe from './media/TicTacToe.PNG';
-import GeoVermont from './media/GeoVermont.PNG'
-import Yelpington from './media/Yelpington.PNG'
+import GeoVermont from './media/GeoVermontSM.png';
+import Yelpington from './media/YelpingtonSM.png';
+import ParkBTV from './media/ParkBTV.png'
 
 class Projects extends React.Component {
    constructor(props) {
@@ -20,16 +21,25 @@ class Projects extends React.Component {
          <div id='projectsPage'>
 
             <label>
-               
                <div className='projectLabel'>
+                  Park Burlington
+                  <h6>(BCA capstone project)</h6>
+               </div>
+               <br />
                <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href='https://github.com/BurlingtonCodeAcademy/tic-tac-toe-foxflyer40'>
-                  Tic Tac Toe
+                  href='http://park-burlington.herokuapp.com/'>
+                  <img src={(ParkBTV)} alt='Park Burlington map'></img>
                </a>
-                  
+               <h6>(Demo version)</h6>
+            </label>
+
+            <label>
+               <div className='projectLabel'>
+                  Tic Tac Toe
                </div>
+               <br />
                <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -38,36 +48,39 @@ class Projects extends React.Component {
                </a>
             </label>
 
-            <br />
 
-            <label>
-               <div className='projectLabel'>
-                  Yelpington
-               </div>
-               <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
-                  <img src={(Yelpington)} alt='Yelpington board'></img>
-               </a>
 
-            </label>
+            <div id='githubWork'>
 
-            <br />
+               <label>
+                  <div className='projectLabel'>
+                     Yelpington
+                     <h6>(Github link)</h6>
+                    
+                     <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href='https://github.com/BurlingtonCodeAcademy/yelpington-foxflyer40'>
+                        <img src={(Yelpington)} alt='Yelpington board'></img>
+                     </a>
+                  </div>
+               </label>
 
-            <label>
-               <div className='projectLabel'>
-                  GeoVermont
-               </div>
-               <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
-                  <img src={(GeoVermont)} alt='GeoVermont board'></img>
-               </a>
 
-            </label>
-
+               <label>
+                  <div className='projectLabel'>
+                     GeoVermont
+                     <h6>(Github link)</h6>
+                   
+                     <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href='https://github.com/BurlingtonCodeAcademy/geo-vermonter-anis-michael'>
+                        <img src={(GeoVermont)} alt='GeoVermont board'></img>
+                     </a>
+                  </div>
+               </label>
+            </div>
          </div>
       )
    }

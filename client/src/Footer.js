@@ -6,11 +6,10 @@ class Footer extends React.Component {
       super(props)
 
       this.state = {
-
       }
    }
 
-// Footer with links to social media and modal popup for contact info and form
+   // Footer with links to social media and modal popup for contact info and form
    render() {
       return (
          <div id='footer'>

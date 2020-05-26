@@ -15,15 +15,7 @@ class Form extends React.Component {
     };
   }
 
-  handleInputChange = e =>
-    this.setState({
-      values: { ...this.state.values, [e.target.name]: e.target.value }
-    });
 
-submitForm = e => {
-    e.preventDefault();
-    console.log(this.state.values);
-}
 
   render() {
     return (
@@ -87,5 +79,16 @@ submitForm = e => {
       </form>
     );
   };
+
+  handleInputChange = e =>
+    this.setState({
+      values: { ...this.state.values, [e.target.name]: e.target.value }
+    });
+
+submitForm = e => {
+    e.preventDefault();
+    console.log(this.state.values);
+}
+
 }
 export default Form;

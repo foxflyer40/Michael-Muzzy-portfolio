@@ -82,8 +82,10 @@ class Form extends React.Component {
 
   handleInputChange = e =>
     this.setState({
-      values: { ...this.state.values, [e.target.name]: e.target.value }
-    });
+      name: this.state.values.name,
+        email: this.state.values.email,
+        message: this.state.values.message,
+          });
 
 submitForm = e => {
     e.preventDefault();

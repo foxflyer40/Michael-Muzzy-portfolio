@@ -9,6 +9,7 @@ import Hobbies from './Hobbies';
 import Work from './Work';
 import Footer from './Footer'
 import Form from './Form'
+import TestForm from './TestForm'
 
 class App extends React.Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class App extends React.Component {
             <button id='closeButton' onClick={this.handleClose}>Close Window</button>
             <br />
            <Form />
+           <TestForm />
           </div>
         </div>
 

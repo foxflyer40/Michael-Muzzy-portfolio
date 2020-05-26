@@ -12,6 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-recaptcha": "^2.3.10",
+    "react-scripts": "^3.4.1"
   }
 }

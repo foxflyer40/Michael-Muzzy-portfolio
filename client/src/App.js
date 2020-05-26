@@ -8,7 +8,7 @@ import Projects from './Projects';
 import Hobbies from './Hobbies';
 import Work from './Work';
 import Footer from './Footer'
-import Form from './Form'
+import Form from './pauseForm'
 
 class App extends React.Component {
   constructor(props) {

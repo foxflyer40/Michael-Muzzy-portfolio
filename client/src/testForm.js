@@ -5,17 +5,47 @@ class Form extends React.Component {
     super(props)
 
     this.state = {
-      values: {
-        name: "",
-        email: "",
-        message: "",
-      },
+      name: "",
+      email: "",
+      message: "",
       isSubmitting: false,
-      isError: false
     };
   }
 
+  onNameChange = (event) =>{
+  this.setState({  name: event.target.value })
+  };
 
+  onEmailChange = (event) =>{
+    this.setState({  email: event.target.value })
+    };
+
+    onMessageChange = (event) =>{
+      this.setState({  message: event.target.value })
+      };
+
+      resetForm = () => {
+        this.setState({name: "", email: "", message: ""})
+      }
+
+submitForm = (event) => {
+  event.preventDefault();
+  if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
+    return alert('Please fill in all of the fields then re-submit.')
+  }
+  fetch(('/newContact'), {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({name: this.state.name, email: this.state.email, message: this.state.message})
+  }).then(res=>res.json()).then((jsonObj)=>{
+    this.setState({
+      isSubmitting: jsonObj.status
+    })
+  })
+  this.resetForm();
+}
 
   render() {
     return (
@@ -80,17 +110,7 @@ class Form extends React.Component {
     );
   };
 
-  handleInputChange = e =>
-    this.setState({
-      name: this.state.values.name,
-        email: this.state.values.email,
-        message: this.state.values.message,
-          });
-
-submitForm = e => {
-    e.preventDefault();
-    console.log(this.state.values);
-}
+  
 
 }
 export default Form;

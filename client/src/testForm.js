@@ -12,93 +12,81 @@ class Form extends React.Component {
     };
   }
 
-  onNameChange = (event) =>{
-  this.setState({  name: event.target.value })
+  onNameChange = (event) => {
+    this.setState({ name: event.target.value })
   };
 
-  onEmailChange = (event) =>{
-    this.setState({  email: event.target.value })
-    };
+  onEmailChange = (event) => {
+    this.setState({ email: event.target.value })
+  };
 
-    onMessageChange = (event) =>{
-      this.setState({  message: event.target.value })
-      };
+  onMessageChange = (event) => {
+    this.setState({ message: event.target.value })
+  };
 
-      resetForm = () => {
-        this.setState({name: "", email: "", message: ""})
-      }
-
-submitForm = (event) => {
-  event.preventDefault();
-  if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
-    return alert('Please fill in all of the fields then re-submit.')
+  resetForm = () => {
+    this.setState({ name: "", email: "", message: "" })
   }
-  fetch(('/newContact'), {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({name: this.state.name, email: this.state.email, message: this.state.message})
-  }).then(res=>res.json()).then((jsonObj)=>{
-    this.setState({
-      isSubmitting: jsonObj.status
+
+  submitForm = (event) => {
+    event.preventDefault();
+    if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
+      return alert('Please fill in all of the fields then re-submit.')
+    }
+    fetch(('/newContact'), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
+    }).then(res => res.json()).then((jsonObj) => {
+      this.setState({
+        isSubmitting: jsonObj.status
+      })
     })
-  })
-  this.resetForm();
-}
+    this.resetForm();
+  }
 
   render() {
     return (
-      <form id='form' onSubmit={this.submitForm}>
+      <form id='contactInputs' onSubmit={this.submitForm} method="POST">
 
-        <div className="form-group">
-          <label className="form-label" htmlFor="name">Name:</label>
+
+        <label className="formLabel" >
+          Name:
           <br />
           <input
-            className="form-control"
-            type='name'
-            name='name'
-            id="name"
-            value={this.state.values.name}
-            onChange={this.handleInputChange}
-            title='Name'
-            required
-          />
-        </div>
+            type='text'
+            id="formName"
+            value={this.state.name}
+            onChange={this.onNameChange}>
+          </input>
+        </label>
+
         <br />
 
-        <div className="form-group">
-          <label className="form-label" htmlFor="email">Email address:</label>
+
+        <label className="formLabel" >Email address:
           <br />
           <input
             type="email"
-            className="form-control"
-            id="email"
+            id="formEmail"
             placeholder="name@example.com"
-            name="email"
-            value={this.state.values.email}
-            onChange={this.handleInputChange}
-            title="Email"
-            required
+            value={this.state.email}
+            onChange={this.onEmailChange}
           />
-        </div>
+        </label>
         <br />
 
-        <div className="form-group">
-          <label className="form-label" htmlFor="message">Message:</label>
+
+        <label className="form-label" >Message:
           <br />
           <textarea
-            rows="1"
-            cols="26"
-            name="message"
-            className="form-control"
-            id="message">
-            value={this.state.values.message}
-            onChange={this.handleInputChange}
-            title="Message"
-            required
+            id="formMessage">
+            value={this.state.message}
+            onChange={this.onMessageChange}
           </textarea>
-        </div>
+        </label>
         <br />
         <br />
 
@@ -110,7 +98,7 @@ submitForm = (event) => {
     );
   };
 
-  
+
 
 }
 export default Form;

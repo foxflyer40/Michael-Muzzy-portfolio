@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TestForm extends React.Component {
+class Formtwo extends React.Component {
   constructor(props) {
     super(props)
 
@@ -101,4 +101,4 @@ class TestForm extends React.Component {
 
 
 }
-export default TestForm;
+export default Formtwo;

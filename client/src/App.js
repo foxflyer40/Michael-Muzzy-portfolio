@@ -57,7 +57,7 @@ class App extends React.Component {
             <br />
             <button id='closeButton' onClick={this.handleClose}>Close Window</button>
             <br />
-           {/* <Form /> */}
+           <Form />
            <TestForm />
           </div>
         </div>

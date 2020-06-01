@@ -81,10 +81,9 @@ class Formtwo extends React.Component {
 
         <label className="form-label" >Message:
           <br />
-          <textarea
-            id="formMessage">
+          <textarea id="formMessage"
             value={this.state.message}
-            onChange={this.onMessageChange}
+            onChange={this.onMessageChange} >
           </textarea>
         </label>
         <br />

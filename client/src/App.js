@@ -9,7 +9,7 @@ import Hobbies from './Hobbies';
 import Work from './Work';
 import Footer from './Footer'
 import Form from './Form'
-import TestForm from './TestForm'
+import Formtwo from './Formtwo'
 
 class App extends React.Component {
   constructor(props) {
@@ -57,7 +57,7 @@ class App extends React.Component {
             <br />
             <button id='closeButton' onClick={this.handleClose}>Close Window</button>
             <br />
-            <TestForm />
+            <Formtwo />
             <Form />
           </div>
         </div>

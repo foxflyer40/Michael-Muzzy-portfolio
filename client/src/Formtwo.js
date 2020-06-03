@@ -44,6 +44,7 @@ class Formtwo extends React.Component {
         isSubmitting: jsonObj.status
       })
     })
+    console.log(jsonObj)
     this.resetForm();
   }
 

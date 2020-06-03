@@ -8,7 +8,6 @@ import Projects from './Projects';
 import Hobbies from './Hobbies';
 import Work from './Work';
 import Footer from './Footer'
-import Form from './Form'
 import Formtwo from './Formtwo'
 
 class App extends React.Component {
@@ -58,7 +57,6 @@ class App extends React.Component {
             <button id='closeButton' onClick={this.handleClose}>Close Window</button>
             <br />
             <Formtwo />
-            {/* <Form /> */}
           </div>
         </div>
 

@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
 const sgMail = require('@sendgrid/mail');
-const bodyParser = require('bodyParser');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.connect(`mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/contact?`)
 // "mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/test?retryWrites=true&w=majority"

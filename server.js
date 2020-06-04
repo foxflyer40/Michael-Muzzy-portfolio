@@ -51,7 +51,7 @@ async function getMessage(req,res) {
    };
    sgMail.send(msg);
    res.type('application/json').send(JSON.stringify({status: 'thank-you'}))
-
+console.log(msg)
 }
 
 

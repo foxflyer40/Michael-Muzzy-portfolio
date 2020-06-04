@@ -19,7 +19,7 @@ const sgMail = require('@sendgrid/mail');
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencode({ extended: false }));
 
-app.post('/newContact', getMessage);
+app.post('foxflyer40.com', getMessage);
 
 // const messageSchema = new mongoose.Schema({
 //    name: String,

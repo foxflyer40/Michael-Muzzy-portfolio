@@ -26,6 +26,7 @@ class Formtwo extends React.Component {
 
   resetForm = () => {
     this.setState({ name: "", email: "", message: "" })
+    console.log('form is reset')
   }
 
   submitForm = (event) => {

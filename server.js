@@ -6,28 +6,28 @@ const app = express();
 const port = process.env.PORT || 5000;
 const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-mongoose.connect(`mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/contact?`)
+// const mongoose = require('mongoose');
+// mongoose.connect(`mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/contact?`)
 // "mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/test?retryWrites=true&w=majority"
 
-const newDataBase = mongoose.connection;
+// const newDataBase = mongoose.connection;
 
-newDataBase.on('error', (err)=>{console.log('something went wrong:',err)});
-newDataBase.once('open', ()=>{console.log('Connected...')});
+// newDataBase.on('error', (err)=>{console.log('something went wrong:',err)});
+// newDataBase.once('open', ()=>{console.log('Connected...')});
 
-app.use(express.static(path.join(_dirname, '/client/build')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencode({ extended: false }));
+// app.use(express.static(path.join(_dirname, '/client/build')));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencode({ extended: false }));
 
-app.post('/newContact', getMessage);
+// app.post('/newContact', getMessage);
 
-const messageSchema = new mongoose.Schema({
-   name: String,
-   email: String,
-   message: String
-})
+// const messageSchema = new mongoose.Schema({
+//    name: String,
+//    email: String,
+//    message: String
+// })
 
-const Message = mongoose.model('Message', messageSchema);
+// const Message = mongoose.model('Message', messageSchema);
 
 async function getMessage(req,res) {
    let name = req.body.name;

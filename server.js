@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 5000;
 const sgMail = require('@sendgrid/mail');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 // const mongoose = require('mongoose');
 // mongoose.connect(`mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/contact?`)
 // "mongodb+srv://michaelmuzzy:${process.env.PASSWORD}@contactformrecord-izqt0.mongodb.net/test?retryWrites=true&w=majority"
@@ -19,7 +19,7 @@ const bodyParser = require('body-parser');
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencode({ extended: false }));
 
-// app.post('/newContact', getMessage);
+app.post('/newContact', getMessage);
 
 // const messageSchema = new mongoose.Schema({
 //    name: String,
@@ -53,11 +53,6 @@ async function getMessage(req,res) {
    res.type('application/json').send(JSON.stringify({status: 'thank-you'}))
 
 }
-
-
-
-
-
 
 
 app.use(express.static(path.resolve('./client/build')))

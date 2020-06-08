@@ -42,24 +42,7 @@ async function getMessage(req,res) {
 
    await newMessage.save()
 
-   sgMail.setApiKey(process.env.ContactFormApi);
-   const msg = {
-      to: 'foxflyer40@gmail.com',
-      from: email,
-      subject: 'New Contact from foxflyer40.com',
-      text: `${message}\nFrom: ${name}`
-   };
-   sgMail.send(msg);
-   res.type('application/json').send(JSON.stringify({status: 'thank-you'}))
-console.log(msg)
-}
-
-
-
-// using Twilio SendGrid's v3 Node.js Library
-// https://github.com/sendgrid/sendgrid-nodejs
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
   to: 'test@example.com',
   from: 'test@example.com',
@@ -68,6 +51,20 @@ const msg = {
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 };
 sgMail.send(msg);
+
+   // sgMail.setApiKey(process.env.ContactFormApi);
+   // const msg = {
+   //    to: 'foxflyer40@gmail.com',
+   //    from: email,
+   //    subject: 'New Contact from foxflyer40.com',
+   //    text: `${message}\nFrom: ${name}`
+   // };
+   // sgMail.send(msg);
+   // res.type('application/json').send(JSON.stringify({status: 'thank-you'}))
+console.log(msg)
+}
+
+
 
 
 app.use(express.static(path.resolve('./client/build')))

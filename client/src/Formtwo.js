@@ -37,7 +37,8 @@ class Formtwo extends React.Component {
     fetch(('/'), {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
     }).then(res => res.json()).then((jsonObj) => {

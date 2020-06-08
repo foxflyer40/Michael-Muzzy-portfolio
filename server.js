@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 const sgMail = require('@sendgrid/mail');
 
 
-app.post('/Formtwo', getMessage);
+app.post('/', getMessage);
 
 
 async function getMessage(req,res) {

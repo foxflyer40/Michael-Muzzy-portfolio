@@ -15,13 +15,13 @@ async function getMessage(req,res) {
    let email = req.body.email;
    let message = req.body.message;
 
-   let newMessage = Message({
-      name: name,
-      email: email,
-      message: message
-   })
+   // let newMessage = Message({
+   //    name: name,
+   //    email: email,
+   //    message: message
+   // })
 
-   await newMessage.save()
+   // await newMessage.save()
 
    sgMail.setApiKey(process.env.ContactFormApi);
    const msg = {

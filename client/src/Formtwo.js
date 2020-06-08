@@ -34,12 +34,11 @@ class Formtwo extends React.Component {
     if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
       return alert('Please fill in all of the fields then re-submit.')
     }
-    fetch(('/'), {
+    fetch(('/Formtwo'), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
+        },
       body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
     }).then(res => res.json()).then((jsonObj) => {
       this.setState({

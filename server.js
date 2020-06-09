@@ -11,13 +11,12 @@ app.post('/Formtwo', getMessage);
 
 
 async function getMessage(req,res) {
-   console.log(req.body.name)
-   console.log(req.body.email)
-   console.log(req.body.message)
    let name = req.body.name;
    let email = req.body.email;
    let message = req.body.message;
- 
+   console.log(name)
+    console.log(email)
+    console.log(message)
 
    // let newMessage = Message({
    //    name: name,

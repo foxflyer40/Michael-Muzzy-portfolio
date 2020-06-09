@@ -48,7 +48,7 @@ class Formtwo extends React.Component {
     })
     console.log("2- " + this.state.isSubmitting)
    
-    console.log(this.jsonObj.status)
+    console.log(this.name)
  
     // this.resetForm();
   }

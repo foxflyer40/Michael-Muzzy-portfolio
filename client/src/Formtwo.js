@@ -44,7 +44,7 @@ class Formtwo extends React.Component {
       this.setState({
         isSubmitting: jsonObj.status
       })
-    }).catch(err => console.error("Error:", err))
+    })
     
     console.log('state = ' + this.state.name)
     console.log('state = ' + this.state.email)

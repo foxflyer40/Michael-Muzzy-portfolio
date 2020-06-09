@@ -47,10 +47,10 @@ class Formtwo extends React.Component {
       })
     })
     console.log("1 - " + this.state.isSubmitting)
-    console.log(this.body)
-    // console.log('state = ' + this.state.name)
-    // console.log('state = ' + this.state.email)
-    // console.log('state = ' + this.state.message)
+   
+    console.log('body = ' + this.body.name)
+    console.log('body = ' + this.body.email)
+    console.log('body = ' + this.body.message)
     // this.resetForm();
   }
 

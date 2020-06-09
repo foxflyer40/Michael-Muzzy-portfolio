@@ -31,7 +31,7 @@ class Formtwo extends React.Component {
 
   submitForm = (event) => {
     event.preventDefault();
-    console.log("2 - " + this.state.isSubmitting)
+    console.log("1- " + this.state.isSubmitting)
     if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
       return alert('Please fill in all of the fields then re-submit.')
     }
@@ -46,11 +46,10 @@ class Formtwo extends React.Component {
         isSubmitting: jsonObj.status
       })
     })
-    console.log("1 - " + this.state.isSubmitting)
+    console.log("2- " + this.state.isSubmitting)
    
-    console.log('body = ' + this.body.name)
-    console.log('body = ' + this.body.email)
-    console.log('body = ' + this.body.message)
+    console.log(jsonObj)
+ 
     // this.resetForm();
   }
 

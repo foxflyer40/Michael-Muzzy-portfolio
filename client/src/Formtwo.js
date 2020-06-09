@@ -44,7 +44,8 @@ class Formtwo extends React.Component {
       this.setState({
         isSubmitting: jsonObj.status
       })
-    })
+    }).catch(err => console.error("Error:", err))
+    
     console.log('state = ' + this.state.name)
     console.log('state = ' + this.state.email)
     console.log('state = ' + this.state.message)
@@ -53,7 +54,7 @@ class Formtwo extends React.Component {
 
   render() {
     return (
-      <form id='contactInputs' onSubmit={this.submitForm} method="POST">
+      <form id='contactInputs' onSubmit={this.submitForm}> 
 
 
         <label className="formLabel" >

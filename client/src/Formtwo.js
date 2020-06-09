@@ -48,7 +48,7 @@ class Formtwo extends React.Component {
     console.log(this.state.name)
     console.log(this.state.email)
     console.log(this.state.message)
-    this.resetForm();
+    // this.resetForm();
   }
 
   render() {

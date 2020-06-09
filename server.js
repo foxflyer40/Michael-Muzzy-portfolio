@@ -10,7 +10,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/Footer/Formtwo', getMessage);
+app.post('/App/Formtwo', getMessage);
 
 
 async function getMessage(req, res) {

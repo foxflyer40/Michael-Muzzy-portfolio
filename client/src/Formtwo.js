@@ -45,9 +45,9 @@ class Formtwo extends React.Component {
         isSubmitting: jsonObj.status
       })
     })
-    console.log(this.state.name)
-    console.log(this.state.email)
-    console.log(this.state.message)
+    console.log('state = ' + this.state.name)
+    console.log('state = ' + this.state.email)
+    console.log('state = ' + this.state.message)
     // this.resetForm();
   }
 

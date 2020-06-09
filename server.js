@@ -14,6 +14,9 @@ async function getMessage(req,res) {
    let name = req.body.name;
    let email = req.body.email;
    let message = req.body.message;
+   console.log(name)
+    console.log(email)
+    console.log(message)
 
    // let newMessage = Message({
    //    name: name,

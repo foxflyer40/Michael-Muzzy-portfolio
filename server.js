@@ -29,8 +29,15 @@ async function getMessage(req, res) {
       subject: 'New Contact from foxflyer40.com',
       text: `${message}\nFrom: ${name}`
    };
-   sgMail.send(msg);
-   res.type('application/json').send(JSON.stringify({ status: 'thank-you' }))
+   sgMail.send(msg)
+      .then(() => { }, error => {
+         console.error(error);
+
+         if (error.res) {
+            console.error(error.res.body)
+         }
+      });
+   // res.type('application/json').send(JSON.stringify({ status: 'thank-you' }))
    console.log(msg)
 }
 

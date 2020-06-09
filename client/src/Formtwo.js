@@ -31,6 +31,7 @@ class Formtwo extends React.Component {
 
   submitForm = (event) => {
     event.preventDefault();
+    console.log("2 - " + isSubmitting)
     if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
       return alert('Please fill in all of the fields then re-submit.')
     }
@@ -38,23 +39,24 @@ class Formtwo extends React.Component {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        },
+      },
       body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
     }).then(res => res.json()).then((jsonObj) => {
       this.setState({
         isSubmitting: jsonObj.status
       })
     })
-    
-    console.log('state = ' + this.state.name)
-    console.log('state = ' + this.state.email)
-    console.log('state = ' + this.state.message)
+    console.log("1 - " + isSubmitting)
+    console.log(body)
+    // console.log('state = ' + this.state.name)
+    // console.log('state = ' + this.state.email)
+    // console.log('state = ' + this.state.message)
     // this.resetForm();
   }
 
   render() {
     return (
-      <form id='contactInputs' onSubmit={this.submitForm}> 
+      <form id='contactInputs' onSubmit={this.submitForm}>
 
 
         <label className="formLabel" >

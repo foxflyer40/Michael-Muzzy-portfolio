@@ -8,26 +8,19 @@ const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser')
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/Footer/Formtwo', getMessage);
 
 
-async function getMessage(req,res) {
+async function getMessage(req, res) {
    let name = req.body.name;
    let email = req.body.email;
    let message = req.body.message;
    console.log(name)
-    console.log(email)
-    console.log(message)
+   console.log(email)
+   console.log(message)
 
-   // let newMessage = Message({
-   //    name: name,
-   //    email: email,
-   //    message: message
-   // })
-
-   // await newMessage.save()
 
    sgMail.setApiKey(process.env.ContactFormApi);
    const msg = {
@@ -37,8 +30,8 @@ async function getMessage(req,res) {
       text: `${message}\nFrom: ${name}`
    };
    sgMail.send(msg);
-   res.type('application/json').send(JSON.stringify({status: 'thank-you'}))
-console.log(msg)
+   res.type('application/json').send(JSON.stringify({ status: 'thank-you' }))
+   console.log(msg)
 }
 
 

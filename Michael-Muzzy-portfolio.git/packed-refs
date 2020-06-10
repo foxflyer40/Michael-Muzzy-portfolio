@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+5c9d741f8e2e762979edc99ca90122ee2b8ab9a5 refs/heads/create-modal-component
+585c53bf3b155877f57e8fa996d86baac44e244c refs/heads/master
+bd33a25a663b60eb7c38a74aab534bf7a90827ff refs/heads/template
+3463d3d1a0e0c69bd76cdd930e697177b6278c4a refs/pull/1/head
+3463d3d1a0e0c69bd76cdd930e697177b6278c4a refs/pull/2/head

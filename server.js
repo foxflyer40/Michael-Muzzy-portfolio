@@ -22,7 +22,7 @@ async function getMessage(req, res) {
    console.log(message)
 
 
-   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+   sgMail.setApiKey(process.env.ContactFormApi);
    const msg = {
       to: 'foxflyer40@gmail.com',
       from: email,

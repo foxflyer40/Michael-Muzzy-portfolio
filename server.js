@@ -29,6 +29,17 @@ async function getMessage(req, res) {
       subject: 'New Contact from foxflyer40.com',
       text: `${message}\nFrom: ${name}`
    };
+
+   const {
+      classes: {
+        Mail,
+      },
+    } = require('@sendgrid/helpers');
+    const mail = Mail.create(data);
+    const body = mail.toJSON();
+    console.log(body);
+
+
    sgMail.send(msg)
       .then(() => { }, error => {
          console.error(error);

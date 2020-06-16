@@ -2,11 +2,13 @@
 
 html, body {
    height: 100%;
+   background-color: floralwhite;
 }
 
 #body {
    display: flex;
    flex-direction: column;
+   background-color: floralwhite;
 }
 
 #content {
@@ -20,7 +22,7 @@ html, body {
    top: 0;
    left: 0;
    width: 100%;
-   background-color: #FFF;
+   background-color: floralwhite;
    z-index: 99;
 }
 
@@ -30,6 +32,7 @@ html, body {
    margin-top: 1em;
    margin-bottom: 1em;
    font-size: x-large;
+   background-color: floralwhite;
 }
 
 .bannerSelector {
@@ -55,6 +58,7 @@ html, body {
    justify-content: center;
    align-items: center;
    color: rgb(12, 108, 187);
+   background-color: floralwhite;
 }
 
 @media screen and (max-width: 770px) {
@@ -248,7 +252,7 @@ label {
    z-index: 3000;
    position: absolute;
    top: 0em;
-   background-color: rgba(0, 0, 0, .8);
+   background-color: rgba(92, 73, 33, 0.924);
    justify-items: center;
    align-items: center;
    margin: 1% 5% 9%;
@@ -295,6 +299,7 @@ align-content: flex-start;
    margin-top: 1em;
    margin-bottom: 1em;
    font-size: x-large;
+   background-color: floralwhite;
 }
 
 .footerSelector {

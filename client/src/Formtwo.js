@@ -28,6 +28,13 @@ class Formtwo extends React.Component {
     this.setState({ name: "", email: "", message: "" })
   }
 
+  printState = () => {
+    console.log(this.state.name)
+    console.log(this.state.email)
+    console.log(this.state.message)
+    console.log(this.state.isSubmitting)
+  }
+
   submitForm = (event) => {
     event.preventDefault();
 
@@ -38,15 +45,14 @@ class Formtwo extends React.Component {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-      
-       },
+      },
       body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
     }).then(res => res.json()).then((jsonObj) => {
       this.setState({
         isSubmitting: jsonObj.status
       })
     })
-
+    console.log(this.body)
     this.resetForm();
   }
 

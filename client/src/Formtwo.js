@@ -26,18 +26,19 @@ class Formtwo extends React.Component {
 
   resetForm = () => {
     this.setState({ name: "", email: "", message: "" })
+    }
+
+  printState = (num) => {
+    console.log(num + this.state.name)
+    console.log(num + this.state.email)
+    console.log(num + this.state.message)
+    console.log(num + this.state.isSubmitting)
   }
 
-  printState = () => {
-    console.log(this.state.name)
-    console.log(this.state.email)
-    console.log(this.state.message)
-    console.log(this.state.isSubmitting)
-  }
 
   submitForm = (event) => {
     event.preventDefault();
-
+    this.printState(0);
     if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
       return alert('Please fill in all of the fields then re-submit.')
     }
@@ -48,13 +49,16 @@ class Formtwo extends React.Component {
       },
       body: JSON.stringify({ name: this.state.name, email: this.state.email, message: this.state.message })
     }).then(res => res.json()).then((jsonObj) => {
+
       this.setState({
         isSubmitting: jsonObj.status
       })
+      this.printState(2);
+      alert(this.state.isSubmitting)
     })
-    console.log(this.body)
+    this.printState(1);
     this.resetForm();
-  }
+    }
 
   render() {
     return (

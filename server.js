@@ -19,24 +19,24 @@ async function getMessage(req, res) {
 
 
 
-res.type('application/json').send(JSON.stringify({ status: 'thank-you' }))
+res.type('application/json').send(JSON.stringify({ status: 'Your message has been sent.  Thank you!' }))
 
 }
 
-// var API_KEY = process.env.API_KEY;
-// var DOMAIN = 'heroku.com';
-// var mailgun = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
+var API_KEY = process.env.API_KEY;
+var DOMAIN = 'heroku.com';
+var mailgun = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
 
-// const data = {
-//   from: 'Excited User <me@samples.mailgun.org>',
-//   to: 'foxflyer40@gmail.com',
-//   subject: 'Hello',
-//   text: 'Testing some Mailgun awesomeness!'
-// };
+const data = {
+  from: 'Excited User <me@samples.mailgun.org>',
+  to: 'foxflyer40@gmail.com',
+  subject: 'Hello',
+  text: 'Testing some Mailgun awesomeness!'
+};
 
-// mailgun.messages().send(data, (error, body) => {
-//   console.log(body);
-// });
+mailgun.messages().send(data, (error, body) => {
+  console.log(body);
+});
 
 
 app.use(express.static(path.resolve('./client/build')))

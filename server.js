@@ -23,7 +23,7 @@ res.type('application/json').send(JSON.stringify({ status: 'Your message has bee
 
 }
 
-var API_KEY = process.env.API_KEY;
+var API_KEY = (process.env.API_KEY);
 var DOMAIN = 'heroku.com';
 var mailgun = require('mailgun-js')({apiKey: API_KEY, domain: DOMAIN});
 

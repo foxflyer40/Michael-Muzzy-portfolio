@@ -31,7 +31,7 @@ async function getMessage(req, res) {
    //    console.log(body);
    // });
 
-   res.type('application/json').send(JSON.stringify({ status: 'Your message has been sent.  Thank you!' }))
+   res.type('application/json').send(JSON.stringify({ status: 'ERROR - Your message was not sent...' }))
 
 }
 
